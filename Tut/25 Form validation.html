@@ -3,7 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form validation</title>
   </head>
-  <body></body>
+  <body>
+    <!-- validation -->
+    <p>The process to check a form meets expected criteria</p>
+
+    <label for="firstName"></label>
+    <input type="text" id="firstName" />
+
+    <!-- sever side and client side explanation -->
+    <img src="./images/SeverSide&ClientSide Validation.png" alt="" />
+
+    <!-- CLient side validation illustration -->
+    <img src="/Tut/images/Clinet side.png" alt="" />
+
+    <!-- Types of client side validation -->
+    <!-- Automatically provided by the browser for certain input types -->
+    <p>Built-in</p>
+    <!-- Set by a developer using html attributes -->
+    <p>Custom</p>
+
+    <!-- example -->
+    <form action="/api/v1/journal" method="GET">
+      <label for="firstName">First Name</label>
+      <input
+        type="text"
+        name="fName"
+        id="firstName"
+        required
+        minlength="5"
+        maxlength="10"
+      />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>

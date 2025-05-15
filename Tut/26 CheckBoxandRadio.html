@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Checkbox is used to select one or more options from a predefined list</p>
+
+    <form action="/api/v1/journal" method="post">
+      <input type="checkbox" name="pineapple" id="toppin-1" />
+      <label for="toppin-1">Pineapple</label>
+
+      <input type="checkbox" name="banana" id="toppin-2" />
+      <label for="toppin-1">banana</label>
+
+      <input type="checkbox" name="orange" id="toppin-3" />
+      <label for="toppin-1">orange</label>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <form action="small">
+      <!-- Radio type -->
+      <p>Allows users to select exactly one option from a predefined list</p>
+
+      <img src="/Tut/images/radio type.png" alt="" />
+      <img src="/Tut/images/value attribute.png" alt="" />
+      <img
+        src="/Tut/images/value attribute.png"
+        alt="Diffrence between check and radio"
+      />
+
+      <input type="radio" name="size" id="small" value="s" />
+      <label for="small">small</label>
+
+      <input type="radio" name="size" id="medium" value="m" />
+      <label for="medium">medium</label>
+
+      <input type="radio" name="size" id="large" value="l" />s
+      <label for="large">Large</label>
+    </form>
+  </body>
+</html>
